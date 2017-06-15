@@ -30,15 +30,15 @@ edit and delete after login with either Google or Facebook).
   
   a. changed the ssh port from 22 to 2200<br>
   b. configured the firewall to only accept incoming on ports: 80, 123, 2200 and enabled<br>
-  c. created USER: GRADER WITH PASSWORD: 'grader'<br>
+  c. created USER: grader WITH PASSWORD: 'grader'<br>
   d. gave user: grader sudo access<br>
   e. created RSA ssh key pair for user: grader. Loaded public key onto server.<br>
   f. configured time zone to UTC<br>
-  g. create database USER(ROLE): CATALOG WITH PASSWORD: 'planet8'. permission to 
+  g. create database USER(ROLE): catalog WITH PASSWORD: 'planet8'. permission to 
   	  create database only.<br>
   h. checked that no remote connections were allowed to database which is
      installation default<br>
-  i. configured application handler mod_wsgi with a WSGIScriptAlias(made vvmapp.wsgi file)
+  i. configured application handler mod_wsgi with a WSGIScriptAlias(made vvmapp.wsgi file)<br>
      and a WSGIDaemonProcess to use a virtual environment.<br>
   j. set ServerName and DocumentRoot<br>
   k. disabled Root Login<br>
