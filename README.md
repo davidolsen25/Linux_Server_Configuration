@@ -12,34 +12,36 @@ edit and delete after login with either Google or Facebook).
    and a Flask framework. These are the packages I installed (some globally and some with a
    virtual environment):
 
-  a. python-pip
-  b. virtualenv
-  c. virtualenvwrapper (didn't use)
-  d. postgresql python-psycopg2
-  e. python-sqlalchemy
-  f. werkzeug==0.8.3
-  g. flask==0.9
-  h. Flask-Login==0.1.3
-  i. oauth2client
-  j. requests
-  k. httplib2
-  l. git
-  m. libapache2-mod-wsgi
+  a. python-pip<br>
+  b. virtualenv<br>
+  c. virtualenvwrapper (didn't use)<br>
+  d. postgresql python-psycopg2<br>
+  e. python-sqlalchemy<br>
+  f. werkzeug==0.8.3<br>
+  g. flask==0.9<br>
+  h. Flask-Login==0.1.3<br>
+  i. oauth2client<br>
+  j. requests<br>
+  k. httplib2<br>
+  l. git<br>
+  m. libapache2-mod-wsgi<br>
   
   I made the following configuration changes to the Apache2 server:
   
-  a. changed the ssh port from 22 to 2200
-  b. configured the firewall to only accept incoming on ports: 80, 123, 2200 and enabled
-  c. created USER: GRADER WITH PASSWORD: 'grader'
-  d. gave user: grader sudo access
-  e. created RSA ssh key pair for user: grader. Loaded public key onto server.
-  f. configured time zone to UTC
-  g. create database USER(ROLE): CATALOG WITH PASSWORD: 'planet8'. permission to create database only.
-  h. checked that no remote connections were allowed to database which is installation default.
-  i. configured application handler mod_wsgi with a WSGIScriptAlias (made vvmapp.wsgi file),
-     and a WSGIDaemonProcess to use a virtual environment.
-  j. set ServerName and DocumentRoot
-  k. disabled Root Login
+  a. changed the ssh port from 22 to 2200<br>
+  b. configured the firewall to only accept incoming on ports: 80, 123, 2200 and enabled<br>
+  c. created USER: GRADER WITH PASSWORD: 'grader'<br>
+  d. gave user: grader sudo access<br>
+  e. created RSA ssh key pair for user: grader. Loaded public key onto server.<br>
+  f. configured time zone to UTC<br>
+  g. create database USER(ROLE): CATALOG WITH PASSWORD: 'planet8'. permission to 
+  	  create database only.<br>
+  h. checked that no remote connections were allowed to database which is
+     installation default<br>
+  i. configured application handler mod_wsgi with a WSGIScriptAlias(made vvmapp.wsgi file)<br>
+     and a WSGIDaemonProcess to use a virtual environment.<br>
+  j. set ServerName and DocumentRoot<br>
+  k. disabled Root Login<br>
   
   As far as third-party resources, I predominantly relied upon the Udacity Fullstack forums for help
   on several occasions.  I also went to Stack Overflow a good deal as well as a few READTHEDOCS.
