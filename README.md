@@ -38,7 +38,7 @@ edit and delete after login with either Google or Facebook).
   	  create database only.<br>
   h. checked that no remote connections were allowed to database which is
      installation default<br>
-  i. configured application handler mod_wsgi with a WSGIScriptAlias(made vvmapp.wsgi file)<br>
+  i. configured application handler mod_wsgi with a WSGIScriptAlias(made vvmapp.wsgi file)
      and a WSGIDaemonProcess to use a virtual environment.<br>
   j. set ServerName and DocumentRoot<br>
   k. disabled Root Login<br>
