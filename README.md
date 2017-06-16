@@ -45,7 +45,8 @@ edit and delete after login with either Google or Facebook).
   
   4. As far as third-party resources, I predominantly relied upon the Udacity Fullstack forums for help
      on several occasions.  I also went to Stack Overflow a good deal as well as a few READTHEDOCS.
-     I didn't keep a complete record of which worked and which didn't (the large majority didn't). I did
+     I didn't keep a complete record of which worked and which didn't (the large majority didn't). If this is
+     imperative I shall attempt to retrace my steps and document all sources I can identify. I did
      use one very-cropped version of a circuit board graphic in the front end by Szasz Andreea which was offered as
      free wallpaper http://www.desktopwallpaper4.me/abstract/circuit-board-775/. I enquired about a policy 
      for using the graphic for this project, but to date I have received no response. I left it in for aesthetic,
